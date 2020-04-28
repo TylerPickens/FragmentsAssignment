@@ -1,7 +1,5 @@
 package com.ebookfrenzy.assignment4fragments
 
-package com.ebookfrenzy.assignment4fragments
-
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater

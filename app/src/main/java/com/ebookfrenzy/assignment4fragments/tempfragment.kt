@@ -5,12 +5,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.fragment.app.Fragment
+import android.widget.ToggleButton
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.tempfragment.*
 
 class tempfragment : Fragment(){
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
     }
 
@@ -23,7 +23,13 @@ class tempfragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return super.onCreateView(inflater: LayoutInflater?, container, savedInstanceState)
+        val view = inflater.inflate(R.layout.tempfragment, container, false)
+
+        val toggleButtonCF: ToggleButton? = view?.findViewById(R.id.toggleButtonCF)
+
+        val toggleButtonCF?.setOnClickListener {v: View -> onSwitchClick(v)}
+
+        return view
     }
 
 }
