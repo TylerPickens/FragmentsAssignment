@@ -7,5 +7,4 @@
     <string name="fahrenheit">fahrenheit</string>
     <string name="togglebutton">ToggleButton</string>
     <string name="enter_temperature">Enter Temperature</string>
-    <string name="convert">Convert</string>
 </resources>
