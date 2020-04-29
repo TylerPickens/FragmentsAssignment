@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/lengthFM"
+        android:layout_width="185dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="528dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Enter Length"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonFM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="680dp"
+        android:text="@string/convert"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewFM"
+        android:layout_width="185dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="221dp"
+        android:layout_marginTop="527dp"
+        android:text="Conversion"
+        android:textSize="36sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonFM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lengthFM"
+        android:layout_marginTop="15dp"
+        android:text="@string/celsius"
+        android:textOff="Feet"
+        android:textOn="Meters"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
