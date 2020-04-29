@@ -58,11 +58,13 @@ class temp_fragment : Fragment(){
                 conversionType = "CtoF"
                 displayTemp = df.format(result)
                 displayTemp += " F"
+                //here
             }else{
                 val result = FtoC(inputNumber)
                 conversionType = "FtoC"
                 displayTemp = df.format(result)
                 displayTemp += " C"
+                //here
             }
         }else{
             Log.i(TAG,"That was not a number")

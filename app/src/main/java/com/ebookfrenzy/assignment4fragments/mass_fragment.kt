@@ -51,7 +51,7 @@ class mass_fragment : Fragment(){
         isNumeric = input.matches("-?\\d+(\\.\\d+)?".toRegex())
 
         if(isNumeric){
-            val inputNumber = input.toDouble();
+            val inputNumber = input.toInt();
             val df = DecimalFormat("#.#")
 
             if(isKG){
@@ -83,12 +83,12 @@ class mass_fragment : Fragment(){
     }
     //Conversion equations
 
-    private fun KGtoP(mass: Double): Double {
-        return (mass) / 2.2
+    private fun KGtoP(mass: Int): Float {
+        return (mass) / 2.2f
     }
 
-    private fun PtoKG(mass: Double): Double{
-        return (mass) * 2.2
+    private fun PtoKG(mass: Int): Float{
+        return (mass) * 2.2f
     }
 
 

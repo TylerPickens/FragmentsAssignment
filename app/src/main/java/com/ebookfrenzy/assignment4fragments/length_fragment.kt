@@ -50,7 +50,7 @@ class length_fragment : Fragment(){
         isNumeric = input.matches("-?\\d+(\\.\\d+)?".toRegex())
 
         if(isNumeric){
-            val inputNumber = input.toDouble();
+            val inputNumber = input.toInt();
             val df = DecimalFormat("#.#")
 
             if(isMeters){
@@ -82,11 +82,11 @@ class length_fragment : Fragment(){
     }
     //Conversion equations
 
-    private fun MtoF(length: Double): Double{
-        return (length) * 3.3
+    private fun MtoF(length: Int): Float{
+        return (length) * 3.3f
     }
-    private fun FtoM(length: Double): Double{
-        return (length) / 3.3
+    private fun FtoM(length: Int): Float{
+        return (length) / 3.3f
     }
 
 
