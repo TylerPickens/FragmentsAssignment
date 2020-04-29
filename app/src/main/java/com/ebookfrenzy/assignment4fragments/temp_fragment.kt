@@ -75,7 +75,7 @@ class temp_fragment : Fragment(){
             toggleButtonCF?.textOn = "To Fahrenheit"
             isCelsius = false
         }else{
-            toggleButtonCF?.textOff = "To Celsius"
+            toggleButtonCF?.textOff = "To Celsiuss"
             isCelsius = true
         }
 
