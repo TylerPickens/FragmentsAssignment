@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.temp_fragment.*
 import kotlinx.android.synthetic.main.temp_fragment.view.*
 import java.text.DecimalFormat
 
-class length_fragment : Fragment(){
+class LengthFragment : Fragment(){
     var isMeters = true
     val TAG = "HEYO"
     override fun onAttach(context: Context) {

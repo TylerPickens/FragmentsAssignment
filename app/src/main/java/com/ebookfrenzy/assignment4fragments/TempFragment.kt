@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.temp_fragment.*
 import kotlinx.android.synthetic.main.temp_fragment.view.*
 import java.text.DecimalFormat
 
-class temp_fragment : Fragment(){
+class TempFragment : Fragment(){
     var isCelsius = true
     val TAG = "HEYO"
     override fun onAttach(context: Context) {
@@ -58,13 +58,13 @@ class temp_fragment : Fragment(){
                 conversionType = "CtoF"
                 displayTemp = df.format(result)
                 displayTemp += " F"
-                //here
+                textViewCF.text=displayTemp//here
             }else{
                 val result = FtoC(inputNumber)
                 conversionType = "FtoC"
                 displayTemp = df.format(result)
                 displayTemp += " C"
-                //here
+                textViewCF.text=displayTemp
             }
         }else{
             Log.i(TAG,"That was not a number")

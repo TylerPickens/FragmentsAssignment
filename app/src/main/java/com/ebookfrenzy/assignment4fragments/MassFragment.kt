@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.temp_fragment.*
 import kotlinx.android.synthetic.main.temp_fragment.view.*
 import java.text.DecimalFormat
 
-class mass_fragment : Fragment(){
+class MassFragment : Fragment(){
     var isKG = true
     val TAG = "HEYO"
     override fun onAttach(context: Context) {
