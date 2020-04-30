@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ToggleButton
 import androidx.fragment.app.Fragment
+import com.ebookfrenzy.assignment4fragments.R.layout.mass_fragment
 import kotlinx.android.synthetic.main.length_fragment.*
 import kotlinx.android.synthetic.main.mass_fragment.*
 import kotlinx.android.synthetic.main.temp_fragment.*
@@ -32,7 +33,7 @@ class MassFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.mass_fragment, container, false)
+        val view = inflater?.inflate(mass_fragment, container, false)
         val buttonKGP: Button? = view?.findViewById(R.id.buttonKGP)
         val toggleButtonKGP: ToggleButton? = view?.findViewById(R.id.toggleButtonKGP)
 

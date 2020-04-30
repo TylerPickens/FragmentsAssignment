@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ToggleButton
 import androidx.fragment.app.Fragment
+import com.ebookfrenzy.assignment4fragments.R.layout.length_fragment
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.length_fragment.*
 import kotlinx.android.synthetic.main.temp_fragment.*
 import kotlinx.android.synthetic.main.temp_fragment.view.*
@@ -31,7 +33,7 @@ class LengthFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.length_fragment, container, false)
+        val view = inflater?.inflate(length_fragment, container, false)
         val buttonFM: Button? = view?.findViewById(R.id.buttonFM)
         val toggleButtonFM: ToggleButton? = view?.findViewById(R.id.toggleButtonFM)
 

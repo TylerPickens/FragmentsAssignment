@@ -29,7 +29,7 @@ class TempFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.temp_fragment, container, false)
+        val view = inflater?.inflate(R.layout.temp_fragment, container, false)
         val buttonCF: Button? = view?.findViewById(R.id.buttonCF)
         val toggleButtonCF: ToggleButton? = view?.findViewById(R.id.toggleButtonCF)
 
@@ -56,13 +56,13 @@ class TempFragment : Fragment(){
                 conversionType = "CtoF"
                 displayTemp = df.format(result)
                 displayTemp += " F"
-                textViewKGP.text=displayTemp//here
+                textViewCF.text=displayTemp//here
             }else{
                 val result = FtoC(inputNumber)
                 conversionType = "FtoC"
                 displayTemp = df.format(result)
                 displayTemp += " C"
-                textViewKGP.text=displayTemp
+                textViewCF.text=displayTemp
             }
         }else{
             Log.i(TAG,"That was not a number")
