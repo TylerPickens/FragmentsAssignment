@@ -9,9 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ToggleButton
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.length_fragment.*
 import kotlinx.android.synthetic.main.temp_fragment.*
-import kotlinx.android.synthetic.main.temp_fragment.view.*
 import java.text.DecimalFormat
 
 class TempFragment : Fragment(){
@@ -58,13 +56,13 @@ class TempFragment : Fragment(){
                 conversionType = "CtoF"
                 displayTemp = df.format(result)
                 displayTemp += " F"
-                textViewCF.text=displayTemp//here
+                textViewKGP.text=displayTemp//here
             }else{
                 val result = FtoC(inputNumber)
                 conversionType = "FtoC"
                 displayTemp = df.format(result)
                 displayTemp += " C"
-                textViewCF.text=displayTemp
+                textViewKGP.text=displayTemp
             }
         }else{
             Log.i(TAG,"That was not a number")
@@ -85,11 +83,11 @@ class TempFragment : Fragment(){
     //Conversion equations
 
     private fun CtoF(temp: Int): Float{
-        return temp * (9f / 5f) + 32
+        return (temp - 32) * (5f / 9f)
     }
 
     private fun FtoC(temp: Int): Float{
-        return (temp - 32) * (5f / 9f)
+        return temp * (9f / 5f) + 32
     }
 
 

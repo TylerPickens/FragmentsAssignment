@@ -7,4 +7,11 @@
     <string name="fahrenheit">fahrenheit</string>
     <string name="togglebutton">ToggleButton</string>
     <string name="enter_temperature">Enter Temperature</string>
+    <string name="enter_mass">Enter Mass</string>
+    <string name="kg">KG</string>
+    <string name="pounds">Pounds</string>
+    <string name="conversion">Conversion</string>
+    <string name="enter_length">Enter Length</string>
+    <string name="feet">Feet</string>
+    <string name="meters">Meters</string>
 </resources>

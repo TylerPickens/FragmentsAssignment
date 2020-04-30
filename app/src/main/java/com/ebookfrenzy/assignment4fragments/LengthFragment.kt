@@ -58,11 +58,13 @@ class LengthFragment : Fragment(){
                 conversionType = "MtoF"
                 displayLength = df.format(result)
                 displayLength += " F"
+                textViewFM.text=displayLength
             }else{
                 val result = FtoM(inputNumber)
                 conversionType = "FtoM"
                 displayLength = df.format(result)
                 displayLength += " M"
+                textViewFM.text=displayLength
             }
         }else{
             Log.i(TAG,"That was not a number")

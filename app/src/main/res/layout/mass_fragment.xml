@@ -13,7 +13,7 @@
         android:layout_marginTop="260dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Enter Mass"
+        android:hint="@string/enter_mass"
         android:inputType="textPersonName"
         android:textSize="30sp" />
 
@@ -34,13 +34,13 @@
         android:layout_below="@id/massKGP"
         android:layout_marginTop="74dp"
         android:text="@string/celsius"
-        android:textOff="KG"
-        android:textOn="Pounds"
+        android:textOff="@string/kg"
+        android:textOn="@string/pounds"
         android:layout_centerHorizontal="true"
         />
 
     <TextView
-        android:id="@+id/textViewCF"
+        android:id="@+id/textViewKGP"
         android:layout_width="185dp"
         android:layout_height="70dp"
         android:layout_alignParentStart="true"

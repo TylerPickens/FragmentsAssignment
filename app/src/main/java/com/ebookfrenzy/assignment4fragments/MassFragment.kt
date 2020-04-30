@@ -59,11 +59,13 @@ class MassFragment : Fragment(){
                 conversionType = "KGtoP"
                 displayMass = df.format(result)
                 displayMass += " P"
+                textViewKGP.text=displayMass
             }else{
                 val result = PtoKG(inputNumber)
                 conversionType = "PtoKG"
                 displayMass = df.format(result)
                 displayMass += " KG"
+                textViewKGP.text=displayMass
             }
         }else{
             Log.i(TAG,"That was not a number")
