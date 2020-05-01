@@ -4,54 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
-    <fragment
-        android:id="@+id/temp_fragment"
-        android:name="com.ebookfrenzy.assignment4fragments.TempFragment"
-        android:layout_width="409dp"
-        android:layout_height="278dp"
-        android:layout_marginStart="169dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="169dp"
-        android:layout_marginBottom="665dp"
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        app:menu="@menu/bottom_navigation"
+        tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185"
-        tools:layout="@layout/temp_fragment" />
+        />
 
-    <fragment
-        android:id="@+id/mass_fragment"
-        android:name="com.ebookfrenzy.assignment4fragments.MassFragment"
-        android:layout_width="411dp"
-        android:layout_height="213dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="263dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temp_fragment"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout="@layout/mass_fragment" />
-
-    <fragment
-        android:id="@+id/lengthFragment"
-        android:name="com.ebookfrenzy.assignment4fragments.LengthFragment"
-        android:layout_width="408dp"
-        android:layout_height="248dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mass_fragment"
-        tools:layout="@layout/length_fragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
